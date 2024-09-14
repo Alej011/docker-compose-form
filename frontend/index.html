@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulario</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+    </head>
+    <body class="registro-usuario">
+        <main class="contenedor sombra">
+            <section class="tipografia-contacto">
+                <h2>Formulario completo </h2>
+                <form class="formulario">
+                    <fieldset>
+                        <legend>Registrate llenando todos los campos</legend>
+                        <div class="contenedor-campos">
+
+                            <div class="campo">
+                                <label for="nombre" >Nombre</label>
+                                <input class="input-text" type="text"
+                                    placeholder="Escribe tu nombre" id="nombre" />
+                            </div>
+
+                            <div class="campo">
+                                <label for="apellido">Apellido</label>
+                                <input class="input-text" type="text"
+                                    placeholder="Escribe tu apellido" id="apellido"/>
+                            </div>
+
+                            <div class="campo">
+                                <label for="email">correo</label>
+                                <input class="input-text" type="text"
+                                    placeholder="Correo" id="email"/>
+                            </div>
+
+                            <div class="campo">
+                                <label for="password" >Contraseña</label>
+                                <input class="input-text" type="password"
+                                    placeholder="Ingresa tu contraseña" id="password" />
+                            </div>
+
+                            <div class="campo">
+                                <label for="pais">País</label>
+                                <select name="pais" id="pais" autocomplete="off">
+                                    <option value="" disabled selected>Selecciona tu país</option>
+                                    <option value="AR">Argentina</option>
+                                    <option value="BR">Brasil</option>
+                                    <option value="CA">Canadá</option>
+                                    <option value="CO">Colombia</option>
+                                    <option value="CR">Costa Rica</option>
+                                    <option value="EC">Ecuador</option>
+                                    <option value="FR">Francia</option>
+                                    <option value="GT">Guatemala</option>
+                                    <option value="HN">Honduras</option>
+                                    <option value="IT">Italia</option>
+                                    <option value="JP">Japón</option>
+                                    <option value="MX">México</option>
+                                    <option value="ES">España</option>
+                                    <option value="US">Estados Unidos</option>
+                                    <option value="UY">Uruguay</option>
+                                </select>
+                            </div>
+
+                            <div class="campo campo-genero">
+                                <label>Género:</label>
+        
+                                <label  for="masculino">Masculino</label>
+                                <input type="radio" id="masculino" name="gender" value="Masculino">
+                                
+                                <label for="femenino">Femenino</label>
+                                <input type="radio" id="femenino" name="gender" value="Femenino">
+                            </div>
+
+                            <div class="campo">
+                                <label for="terminos" >
+                                    <input type="checkbox" id="terminos" name="terminos">
+                                    Acepto los <a href="#">términos y condiciones.</a>
+                                </label>                      
+                            </div>
+                            
+                        </div><!--contenedor-campos-->
+
+                        <div id="campo-errores"></div>
+
+                        <div class="flex centrar">
+                            <input class="boton w-sm-100" type="submit"
+                                value="enviar" />
+                        </div>
+
+                        <div class="flex centrar">
+                            <a class="boton w-sm-100" href="registros.html">Ver registros</a>
+                        </div>
+
+                    </fieldset>
+                </form> <!--FIN DE FORMULARIO-->
+            </section>
+        </main>
+        <script src="/js/dom.js"> </script>
+    </body>
+</html>
